@@ -5,7 +5,7 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from cric.views import home
 from cric.views import login_page,register,logout_view,result,dash,profile, ask_ai_page, proxy_llm,feedback,feedback_view,upcoming
-from cric.views import team_detail,team_list,player_detail,player_list,articles,result_model2
+from cric.views import team_detail,team_list,player_detail,player_list,articles,result_model2,product
 
 urlpatterns = [
     path('',dash,name="dash"),
@@ -19,6 +19,7 @@ urlpatterns = [
     path("ask-ai_page/", ask_ai_page, name="ask_ai_page"), 
     path('feedback/', feedback, name='feedback'),
     path('feedback_view/',feedback_view,name="feedback_view"),
+    path('product/',product,name="product"),
     path('teams/', team_list, name='team_list'),
     path('teams/<int:team_id>/', team_detail, name='team_detail'),
     path('upcoming/', upcoming, name='upcoming'),

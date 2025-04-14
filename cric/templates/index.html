@@ -6,11 +6,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
     <style>
         body {
             padding-top: 50px;
-            
         }
         .container {
             max-width: 900px;
@@ -37,11 +36,11 @@
         }
 
         $(document).ready(function() {
-            // Initialize default images
-            updateTeamImage('India', 'batting_team_image');
-            updateTeamImage('Pakistan', 'bowling_team_image');
+            // Set images based on selected value (keeps after reload)
+            updateTeamImage($('#batting_team').val(), 'batting_team_image');
+            updateTeamImage($('#bowling_team').val(), 'bowling_team_image');
 
-            // Update images on team selection change
+            // On dropdown change
             $('#batting_team').change(function() {
                 updateTeamImage(this.value, 'batting_team_image');
             });
@@ -52,7 +51,6 @@
     </script>
 </head>
 <body>
-    
     <div class="container text-center">
         <h1>Cricket Score Predictor</h1>
 
@@ -66,9 +64,9 @@
                     <div class="form-group">
                         <label for="batting_team">Select Batting Team</label>
                         <select class="form-control" name="batting_team" id="batting_team">
-                            <option value="">Select Team</option>
+                            <option value="" {% if not request.POST.batting_team %}selected{% endif %}>Select Team</option>
                             {% for team in teams %}
-                            <option value="{{ team }}" {% if team == 'India' %}selected{% endif %}>{{ team }}</option>
+                            <option value="{{ team }}" {% if request.POST.batting_team == team %}selected{% endif %}>{{ team }}</option>
                             {% endfor %}
                         </select>
                     </div>
@@ -76,9 +74,9 @@
                     <div class="form-group">
                         <label for="bowling_team">Select Bowling Team</label>
                         <select class="form-control" name="bowling_team" id="bowling_team">
-                            <option value="">Select Team</option>
+                            <option value="" {% if not request.POST.bowling_team %}selected{% endif %}>Select Team</option>
                             {% for team in teams %}
-                            <option value="{{ team }}" {% if team == 'Pakistan' %}selected{% endif %}>{{ team }}</option>
+                            <option value="{{ team }}" {% if request.POST.bowling_team == team %}selected{% endif %}>{{ team }}</option>
                             {% endfor %}
                         </select>
                     </div>
@@ -87,7 +85,7 @@
                         <label for="city">Select City</label>
                         <select class="form-control" name="city" id="city">
                             {% for city in cities %}
-                            <option value="{{ city }}">{{ city }}</option>
+                            <option value="{{ city }}" {% if request.POST.city == city %}selected{% endif %}>{{ city }}</option>
                             {% endfor %}
                         </select>
                     </div>
@@ -99,21 +97,21 @@
 
             <div class="form-group">
                 <label for="current_score">Current Score</label>
-                <input type="number" class="form-control" name="current_score" id="current_score" required>
+                <input type="number" class="form-control" name="current_score" id="current_score" required value="{{ request.POST.current_score }}">
             </div>
 
             <div class="row">
                 <div class="col-md-4">
                     <label for="overs">Overs Done</label>
-                    <input type="number" step="0.1" class="form-control" name="overs" id="overs" required>
+                    <input type="number" step="0.1" class="form-control" name="overs" id="overs" required value="{{ request.POST.overs }}">
                 </div>
                 <div class="col-md-4">
                     <label for="wickets">Wickets Out</label>
-                    <input type="number" class="form-control" name="wickets" id="wickets" required>
+                    <input type="number" class="form-control" name="wickets" id="wickets" required value="{{ request.POST.wickets }}">
                 </div>
                 <div class="col-md-4">
                     <label for="last_five">Runs in Last 5 Overs</label>
-                    <input type="number" class="form-control" name="last_five" id="last_five" required>
+                    <input type="number" class="form-control" name="last_five" id="last_five" required value="{{ request.POST.last_five }}">
                 </div>
             </div>
 

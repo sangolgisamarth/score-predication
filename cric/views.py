@@ -340,3 +340,8 @@ def upcoming(request):
 '''articles'''
 def articles(request):
     return render(request,"articles.html")
+
+
+'''products'''
+def product(request):
+    return render(request,"products.html")

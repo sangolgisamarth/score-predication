@@ -1,0 +1,108 @@
+[
+    {
+      "name": "MRF VK-18 Grand Edition Cricket Kit",
+      "price": "₹6,499",
+      "description": "Includes bat, pads, gloves, helmet, thigh guard, arm guard, abdominal guard, and kit bag.",
+      "image": "https://m.media-amazon.com/images/I/81OLgbh3P1L.jpg",
+      "buy_link": "https://example.com/product/mrf-kit"
+    },
+    {
+      "name": "CEAT Hitman Milaze Junior Cricket Kit",
+      "price": "₹4,999",
+      "description": "Full junior cricket kit with bat, pads, gloves, helmet, guards, and kit bag.",
+      "image": "https://www.ceat.com/content/dam/ceat/product-images/cricket/kit/ceat-hitman-milaze-junior-kit/kit-1.png",
+      "buy_link": "https://example.com/product/ceat-kit"
+    },
+    {
+      "name": "Osprey OS 500 Kashmir Willow Cricket Kit",
+      "price": "₹3,999",
+      "description": "Budget-friendly Kashmir willow kit for beginners with full gear.",
+      "image": "https://rukminim2.flixcart.com/image/832/832/kit/v/3/d/kwos500-osprey-os-500-original-imae2xgchhhb9gs6.jpeg?q=70&crop=false",
+      "buy_link": "https://example.com/product/osprey-kit"
+    },
+    {
+      "name": "New Balance PD 09 Cricket Bat",
+      "price": "₹12,999",
+      "description": "High-quality English Willow bat used by professionals.",
+      "image": "https://images.prodirectsport.com/ProductImages/Main/128296.jpg?imwidth=1065",
+      "buy_link": "https://example.com/product/nb-bat"
+    },
+    {
+      "name": "Chennai Super Kings (CSK) Official Jersey",
+      "price": "₹2,499",
+      "description": "2024-25 IPL official CSK jersey with premium quality fabric.",
+      "image": "https://m.media-amazon.com/images/I/51TNu+KjBUL.jpg",
+      "buy_link": "https://example.com/product/csk-jersey"
+    },
+    {
+      "name": "Mumbai Indians (MI) Official Jersey",
+      "price": "₹2,499",
+      "description": "2024-25 IPL official MI jersey in signature blue and gold.",
+      "image": "https://m.media-amazon.com/images/I/71X0KpWkYDL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/mi-jersey"
+    },
+    {
+      "name": "Royal Challengers Bangalore (RCB) Jersey",
+      "price": "₹2,499",
+      "description": "RCB official jersey with sponsor branding and high-quality stitching.",
+      "image": "https://m.media-amazon.com/images/I/71Un4ppAEML._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/rcb-jersey"
+    },
+    {
+      "name": "Kolkata Knight Riders (KKR) Jersey",
+      "price": "₹2,499",
+      "description": "2024 edition KKR jersey in purple and gold colorway.",
+      "image": "https://m.media-amazon.com/images/I/71tNfbJFbDL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/kkr-jersey"
+    },
+    {
+      "name": "Delhi Capitals (DC) Jersey",
+      "price": "₹2,499",
+      "description": "2024 official DC IPL jersey with premium print.",
+      "image": "https://m.media-amazon.com/images/I/81wlRCK-i9L._SX679_.jpg",
+      "buy_link": "https://example.com/product/dc-jersey"
+    },
+    {
+      "name": "Rajasthan Royals (RR) Jersey",
+      "price": "₹2,499",
+      "description": "RR official pink jersey for the 2024 IPL season.",
+      "image": "https://m.media-amazon.com/images/I/71+UWF4xuaL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/rr-jersey"
+    },
+    {
+      "name": "Sunrisers Hyderabad (SRH) Jersey",
+      "price": "₹2,499",
+      "description": "Bold black and orange jersey of SRH for 2024 IPL.",
+      "image": "https://m.media-amazon.com/images/I/71NGYKenfxL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/srh-jersey"
+    },
+    {
+      "name": "Gujarat Titans (GT) Jersey",
+      "price": "₹2,499",
+      "description": "2024 Gujarat Titans official navy blue jersey.",
+      "image": "https://m.media-amazon.com/images/I/31gnZsv9erL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/gt-jersey"
+    },
+    {
+      "name": "Lucknow Super Giants (LSG) Jersey",
+      "price": "₹2,499",
+      "description": "2024 IPL official LSG jersey with light blue theme.",
+      "image": "https://m.media-amazon.com/images/I/71zuG68UtPL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/lsg-jersey"
+    },
+    {
+      "name": "Batting Gloves - SG Test",
+      "price": "₹2,199",
+      "description": "High protection SG Test batting gloves with strong grip.",
+      "image": "https://m.media-amazon.com/images/I/71JzXqceenL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/sg-gloves"
+    },
+    {
+      "name": "Kookaburra Kahuna Pro Pads",
+      "price": "₹3,499",
+      "description": "Top quality Kahuna Pro batting pads with extra knee cushioning.",
+      "image": "https://m.media-amazon.com/images/I/81UiSMY4fWL._AC_UL480_FMwebp_QL65_.jpg",
+      "buy_link": "https://example.com/product/kahuna-pads"
+    }
+]
+  
